@@ -14,7 +14,7 @@
         df$Time <- strptime(x = as.character(paste(df$Date, df$Time)), format = "%Y-%m-%d %H:%M:%S")
 
 # Step 2 - Create the plot, base plotting
-        png(filename = "plot1.png")
+        png(filename = "plot1.png", width = 480, height = 480)
         hist(df$Global_active_power, 
              col = "red", 
              xlab = "Global Active Power (kilowatts)", 
